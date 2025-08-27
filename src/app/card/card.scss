@@ -1,0 +1,36 @@
+.card {
+  background-color: #15263f; // very dark blue
+  height: 59.6rem;
+  width: 35rem;
+  border-radius: 1.6rem;
+  padding: 2.4rem;
+
+  &__image {
+    width: 30.2rem;
+    height: 30.2rem;
+    border-radius: 0.8rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 100%;
+    color: white;
+    text-transform: capitalize;
+    margin: 2.4rem 0 1.6rem;
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #8bacd9; // soft blue
+
+    span {
+      text-transform: capitalize;
+    }
+  }
+}
