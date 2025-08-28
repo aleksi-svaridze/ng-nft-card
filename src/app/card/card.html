@@ -1,18 +1,30 @@
 <div class="card">
-  <div class="card__image"></div>
-  <h1 class="card__title">equilibrium #3429</h1>
+  <div class="card__image" [style]="{ 'background-image': 'url(' + card.card__image + ')' }"></div>
+  <h1 class="card__title">{{ card.card__title }}</h1>
   <p class="card__description">
-    Our <span>equilibrium</span> collection promotes balance and calm.
+    {{ card.card__description }}
   </p>
   <div class="card__info">
-    <p class="card__info-stats"><img class="card__info-stats--icon" alt="" />0.041 ETH</p>
-    <p class="card__info-deal"><img class="card__info-deal--icon" alt="" />3 days left</p>
+    <p class="card__info-stats">
+      <img class="card__info-stats--icon" [src]="card.card__info_stats__icon" alt="" />{{
+        card.card__info_stats
+      }}
+      ETH
+    </p>
+    <p class="card__info-deal">
+      <img [src]="card.card__info_deal__icon" class="card__info-deal--icon" alt="" />{{
+        card.card__info_deal
+      }}
+      days left
+    </p>
   </div>
 
   <div class="card__divider"></div>
 
   <div class="card__author">
-    <div class="card__author-image"></div>
-    <p class="card__author-name">Creation of <span>Jules Wyvern</span></p>
+    <img [src]="card.card__author_image" class="card__author-image" />
+    <p class="card__author-name">
+      Creation of <span>{{ card.card__author_name }}</span>
+    </p>
   </div>
 </div>
