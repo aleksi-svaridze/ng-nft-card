@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 interface ICard {
   card__image: string;
+  card__image_wrapper__eye: string;
 
   card__title: string;
   card__description: string;
@@ -25,9 +26,10 @@ interface ICard {
 export class Card {
   card: ICard = {
     card__image: 'assets/card-img.png',
+    card__image_wrapper__eye: 'assets/Eye.png',
 
     card__title: 'equilibrium #3429',
-    card__description: ' Our <span>equilibrium</span> collection promotes balance and calm.',
+    card__description: `Our Equilibrium collection promotes balance and calm.`,
 
     card__info_stats: 0.041,
     card__info_stats__icon: 'assets/stats-icon.png',

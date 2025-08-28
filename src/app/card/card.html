@@ -1,5 +1,9 @@
 <div class="card">
-  <div class="card__image" [style]="{ 'background-image': 'url(' + card.card__image + ')' }"></div>
+  <div class="card__image" [style]="{ 'background-image': 'url(' + card.card__image + ')' }">
+    <div class="card__image-wrapper">
+      <img [src]="card.card__image_wrapper__eye" class="card__image-wrapper--icon" />
+    </div>
+  </div>
   <h1 class="card__title">{{ card.card__title }}</h1>
   <p class="card__description">
     {{ card.card__description }}
