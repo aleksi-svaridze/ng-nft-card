@@ -1,13 +1,13 @@
 .card {
   background-color: #15263f; // very dark blue
-  height: 59.6rem;
-  width: 35rem;
+  height: auto; // 1.
+  width: 32.7rem; // 2.
   border-radius: 1.6rem;
   padding: 2.4rem;
 
   &__image {
-    width: 30.2rem;
-    height: 30.2rem;
+    width: 27.8rem; // 3.
+    height: 27.8rem; // 4.
     border-radius: 0.8rem;
     background-position: center;
     background-size: cover;
@@ -47,7 +47,7 @@
     line-height: 100%;
     color: white;
     text-transform: capitalize;
-    margin: 2.4rem 0 1.6rem;
+    margin: 2.4rem 0 1.2rem; // 8.
     transition: color 0.2s;
     cursor: pointer;
   }
@@ -71,14 +71,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 2.4rem 0;
+    margin: 1.6rem 0;
 
     &-stats {
       display: flex;
       align-items: center;
       column-gap: 0.648rem;
       font-weight: 600;
-      font-size: 1.6rem;
+      font-size: 1.5rem; // 7.
       line-height: 100%;
       color: #00fff8; //cyan
 
@@ -93,7 +93,7 @@
       align-items: center;
       column-gap: 0.77rem;
       font-weight: 400;
-      font-size: 1.6rem;
+      font-size: 1.5rem; // 6.
       line-height: 100%;
       color: #8bacd9; // soft blue
 
@@ -122,7 +122,7 @@
       // border: 0.1rem solid white;
     }
     &-name {
-      font-size: 1.6rem;
+      font-size: 1.5rem; // 5.
       line-height: 100%;
       color: #8bacd9; //Soft blue
 
@@ -137,4 +137,44 @@
       }
     }
   }
+}
+
+@media screen and (min-width: 375px) {
+.card {
+  height: 59.6rem;
+  width: 35rem;
+
+  &__image {
+    width: 30.2rem;
+    height: 30.2rem;
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    margin: 2.4rem 0 1.6rem;
+  }
+
+  &__description {
+    font-size: 1.8rem;
+  }
+
+  &__info {
+    margin: 2.4rem 0;
+
+    &-stats {
+      font-size: 1.6rem;
+    }
+
+    &-deal {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__author {
+
+    &-name {
+      font-size: 1.6rem;
+    }
+  }
+}
 }
