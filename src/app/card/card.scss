@@ -12,6 +12,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow: hidden;
     cursor: pointer;
 
     &-wrapper {
@@ -140,41 +141,40 @@
 }
 
 @media screen and (min-width: 375px) {
-.card {
-  height: 59.6rem;
-  width: 35rem;
+  .card {
+    height: 59.6rem;
+    width: 35rem;
 
-  &__image {
-    width: 30.2rem;
-    height: 30.2rem;
-  }
-
-  &__title {
-    font-size: 2.2rem;
-    margin: 2.4rem 0 1.6rem;
-  }
-
-  &__description {
-    font-size: 1.8rem;
-  }
-
-  &__info {
-    margin: 2.4rem 0;
-
-    &-stats {
-      font-size: 1.6rem;
+    &__image {
+      width: 30.2rem;
+      height: 30.2rem;
     }
 
-    &-deal {
-      font-size: 1.6rem;
+    &__title {
+      font-size: 2.2rem;
+      margin: 2.4rem 0 1.6rem;
+    }
+
+    &__description {
+      font-size: 1.8rem;
+    }
+
+    &__info {
+      margin: 2.4rem 0;
+
+      &-stats {
+        font-size: 1.6rem;
+      }
+
+      &-deal {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__author {
+      &-name {
+        font-size: 1.6rem;
+      }
     }
   }
-
-  &__author {
-
-    &-name {
-      font-size: 1.6rem;
-    }
-  }
-}
 }
